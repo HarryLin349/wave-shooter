@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmhwdxyfcu67f"]
+
+[ext_resource type="Texture2D" uid="uid://bgtw3lrvub883" path="res://Square.png" id="1_3gyfh"]
+[ext_resource type="Script" path="res://player.gd" id="2_r7vjs"]
+
+[node name="Player" type="Sprite2D"]
+modulate = Color(0, 0.606908, 0.670718, 1)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_3gyfh")
+script = ExtResource("2_r7vjs")
+
+[node name="Reload Speed" type="Timer" parent="."]
+wait_time = 0.33
+autostart = true
+
+[node name="Dash Duration" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Dash Cooldown" type="Timer" parent="."]
+wait_time = 0.3
+
+[connection signal="timeout" from="Reload Speed" to="." method="_on_reload_speed_timeout"]
+[connection signal="timeout" from="Dash Duration" to="." method="_on_dash_speed_timeout"]
+[connection signal="timeout" from="Dash Cooldown" to="." method="_on_dash_cooldown_timeout"]

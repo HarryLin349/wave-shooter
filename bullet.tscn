@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://w2t16illmm0k"]
+
+[ext_resource type="Texture2D" uid="uid://cf652aagd085h" path="res://Circle.png" id="1_p05gb"]
+[ext_resource type="Script" path="res://bullet.gd" id="2_j31tv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iivw3"]
+radius = 70.0
+
+[node name="Bullet" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_p05gb")
+script = ExtResource("2_j31tv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Hitbox" type="Area2D" parent="." groups=["enemy_damager"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+visible = false
+shape = SubResource("CircleShape2D_iivw3")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
