@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5qkr7xgnpwqd"
-path="res://.godot/imported/Circle.png-79f44e4b7ff3a168cf35fe641cd20483.ctex"
+uid="uid://6vjyopcaxgfe"
+path="res://.godot/imported/Square.png-30e545a078e10ead85783676822da0d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Wave Shooter Assets/Circle.png"
-dest_files=["res://.godot/imported/Circle.png-79f44e4b7ff3a168cf35fe641cd20483.ctex"]
+source_file="res://Assets/Square.png"
+dest_files=["res://.godot/imported/Square.png-30e545a078e10ead85783676822da0d4.ctex"]
 
 [params]
 

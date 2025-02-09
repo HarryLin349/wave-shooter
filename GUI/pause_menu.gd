@@ -9,7 +9,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	testEsc()
+	checkDeath()
 	pass
 
 func resume():
@@ -20,12 +20,10 @@ func pause():
 	get_tree().paused = true
 	$AnimationPlayer.play("blur")
 
-func testEsc():
+func checkDeath():
 	if Input.is_action_just_pressed("pause"):
 		if !get_tree().paused:
 			pause()
-		else:
-			resume()
 
 func _on_resume_pressed() -> void:
 	resume()

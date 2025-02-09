@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://btpugyg5gtawf"
-path="res://.godot/imported/Font.ttf-1216769ec8d4274dd0f06e5186778116.fontdata"
+uid="uid://cj7mntb4bwk2r"
+path="res://.godot/imported/Font.ttf-fe561f8c6f036f4c13f464d595ab85f5.fontdata"
 
 [deps]
 
-source_file="res://Wave Shooter Assets/Font.ttf"
-dest_files=["res://.godot/imported/Font.ttf-1216769ec8d4274dd0f06e5186778116.fontdata"]
+source_file="res://Assets/Font.ttf"
+dest_files=["res://.godot/imported/Font.ttf-fe561f8c6f036f4c13f464d595ab85f5.fontdata"]
 
 [params]
 

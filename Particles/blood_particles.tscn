@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b14pa16m5wp8k"]
 
-[ext_resource type="Texture2D" uid="uid://cf652aagd085h" path="res://Circle.png" id="1_yxocp"]
-[ext_resource type="Script" path="res://blood_particles.gd" id="2_c3blj"]
+[ext_resource type="Texture2D" uid="uid://js08qad5ux0o" path="res://Assets/Circle.png" id="1_yxocp"]
+[ext_resource type="Script" path="res://Particles/blood_particles.gd" id="2_c3blj"]
 
 [sub_resource type="Curve" id="Curve_cjc2a"]
 min_value = -1.0

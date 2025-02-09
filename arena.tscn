@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bmhwdxyfcu67f" path="res://player.tscn" id="1_2pp5e"]
 [ext_resource type="Script" path="res://arena.gd" id="1_t1nuq"]
 [ext_resource type="PackedScene" uid="uid://c1a08m864i4i4" path="res://enemy.tscn" id="3_lpiqu"]
-[ext_resource type="PackedScene" uid="uid://b0rliywfntppt" path="res://pause_menu.tscn" id="4_tbxry"]
+[ext_resource type="PackedScene" uid="uid://b0rliywfntppt" path="res://GUI/pause_menu.tscn" id="4_tbxry"]
 
 [sub_resource type="Environment" id="Environment_xjxdv"]
 background_mode = 3

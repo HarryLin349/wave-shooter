@@ -1,5 +1,8 @@
 extends Sprite2D
 
+var maxHP = 3
+var HP = 3
+
 var max_speed = 160
 var current_speed = 0
 
@@ -41,8 +44,10 @@ func shoot_bullet(direction: Vector2) -> void:
 func shoot(delta: float) -> void:
 	var input = Input.get_vector("shoot_left", "shoot_right", "shoot_up", "shoot_down").normalized()
 	if input != Vector2.ZERO and can_shoot:
-		var bullet_velocity = input + velocity * current_speed / max_speed * 0.3
-		shoot_bullet(bullet_velocity)
+		var rand_velocity = randf_range(0.5,1.2)
+		var rand_angle = randf_range(-0.25,0.25)
+		var bullet_velocity = (input + velocity * current_speed / max_speed * 0.3) * rand_velocity
+		shoot_bullet(bullet_velocity.rotated(rand_angle))
 
 
 func move(delta: float) -> void:

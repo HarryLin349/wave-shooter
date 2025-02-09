@@ -6,7 +6,7 @@ var effective_speed = speed
 var stun = false
 var velocity = Vector2()
 
-var blood_particles = preload("res://blood_particles.tscn")
+var blood_particles = preload("res://Particles/blood_particles.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,10 +15,16 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	if Global.player != null and stun == false:
+		# old adaptive move speed
+		#velocity = global_position.direction_to(Global.player.global_position)
+		#var distance = global_position.distance_to(Global.player.global_position)
+		#effective_speed = min(speed, distance/4 + 2)
+		
 		velocity = global_position.direction_to(Global.player.global_position)
-		var distance = global_position.distance_to(Global.player.global_position)
-		effective_speed = min(speed, distance/4 + 2)
+		effective_speed = speed
+
 	elif stun:
 		velocity = lerp(velocity, Vector2(0,0), 0.3)
 		effective_speed = speed * -3
